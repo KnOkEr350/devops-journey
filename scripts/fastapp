@@ -1,0 +1,25 @@
+#!/bin/bash
+
+APP_DIR="/home/ubuntu/fastapi_app"
+VENV_BIN="$APP_DIR/fastapi_env/bin"
+
+if [ -d "$APP_DIR" ]
+then
+  echo " Directory $APP_DIR exists"
+  
+  if [ -f "$APP_DIR/app.py" ]
+  then
+    echo " app.py found"
+    echo " Starting FastAPI application..."
+    cd "$APP_DIR"
+    "$VENV_BIN/uvicorn" app:app --host 0.0.0.0 --port 8000
+  else
+    echo " Error: app.py not found in $APP_DIR"
+    exit 1
+  fi
+else
+  echo " Error: Directory $APP_DIR does not exist"
+  exit 1
+fi
+
+
