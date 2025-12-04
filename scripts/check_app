@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+
+#!/bin/bash
+
+URL="http://localhost:8000"
+
+if curl "$URL" | grep "Hello"; then
+  echo "The app is active"
+else
+  echo "The app is deactive"
+fi
+
