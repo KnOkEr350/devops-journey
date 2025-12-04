@@ -1,0 +1,7 @@
+ #!/bin/bash
+ echo "The username:"
+ whoami
+ echo "The ip:"
+ hostname -I
+ echo "The directory:"
+ pwd
