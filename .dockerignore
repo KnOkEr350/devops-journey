@@ -1,0 +1,41 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+. Python
+
+# Окружения
+.env
+.venv
+venv/
+ENV/
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Системные
+.DS_Store
+
+# Логи
+*.log
+
+# Docker файлы (не нужны внутри образа)
+Dockerfile
+. dockerignore
+docker-compose. yml
+
+# Документация (не нужна внутри образа)
+*. md
+README. md
+
+# Bash скрипты (не нужны внутри образа)
+scripts/
+
+# Временные файлы
+check_app
